@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import Footer from "../layout/Footer";
-import PhotographyDisplay from "../components/Photography/PhotographyDisplay";
 import PhotographyMenu from "../components/Photography/PhotographyMenu";
+import Category from "../components/Photography/Category";
 
-const Photography = () => {
+const PhotographyCategory = () => {
   return (
     <Fragment>
       <main className="bg-darkColor backdrop">
@@ -12,7 +12,7 @@ const Photography = () => {
             <PhotographyMenu />
           </div>
           <div className="photographyPort p-10 text-[22px]">
-            <PhotographyDisplay />
+            <Category />
           </div>
         </div>
       </main>
@@ -21,4 +21,4 @@ const Photography = () => {
   );
 };
 
-export default Photography;
+export default PhotographyCategory;

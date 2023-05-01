@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { photographyCategory } from "../../utils/photography";
 
 // Images
@@ -17,14 +17,20 @@ const PhotographyMenu = () => {
         {photographyCategory.map((cat, i) => (
           <li
             key={i}
-            className="cursor-pointer font-normal group flex items-center justify-between hover:font-bold"
+            className="cursor-pointer font-normal group focus:font-bold hover:font-bold"
           >
-            {cat.cat}
-            <img
-              src={BoldWhiteArrowRight}
-              alt="ArrowRight"
-              className="w-[24px] h-[24px] hidden group-hover:block"
-            />
+            <NavLink
+              to={`/photography/${cat.photographId}`}
+              className="flex items-center justify-between"
+              activeClassName="active"
+            >
+              {cat.cat}
+              <img
+                src={BoldWhiteArrowRight}
+                alt="ArrowRight"
+                className="w-[24px] h-[24px] hidden group-focus:block group-hover:block"
+              />
+            </NavLink>
           </li>
         ))}
       </ul>

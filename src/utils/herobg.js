@@ -6,25 +6,37 @@ export const heroBg = [
   {
     link: "#",
     img: HomeHero1,
+    width: "826px",
+    height: "642.84px",
   },
   {
     link: "#",
     img: HomeHero2,
+    width: "826px",
+    height: "642.84px",
   },
   {
     link: "#",
     img: HomeHero3,
+    width: "826px",
+    height: "642.84px",
   },
   {
     link: "#",
     img: HomeHero1,
+    width: "826px",
+    height: "642.84px",
   },
   {
     link: "#",
     img: HomeHero2,
+    width: "826px",
+    height: "642.84px",
   },
   {
     link: "#",
     img: HomeHero3,
+    width: "826px",
+    height: "642.84px",
   },
 ];

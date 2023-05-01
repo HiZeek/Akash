@@ -1,15 +1,16 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { photograph } from "../../utils/photography";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const PhotographyDisplay = () => {
   const location = useLocation();
   const pathName = location.pathname;
   return (
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-      <Masonry gutter="20px">
+      <Masonry gutter="20px" className="photography">
         {photograph.map((image, i) => (
-          <div
+          <Link
+            to={`/photography/${image.link}`}
             key={i}
             className="relative bg-cover bg-center bg-no-repeat rounded-2xl inline-block cursor-pointer"
             style={{
@@ -26,7 +27,7 @@ const PhotographyDisplay = () => {
               {image.category}
             </p>
             <div className="singlePhotographyBottom absolute rounded-2xl bottom-0" />
-          </div>
+          </Link>
         ))}
       </Masonry>
     </ResponsiveMasonry>

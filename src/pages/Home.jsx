@@ -5,6 +5,7 @@ import Footer from "../layout/Footer";
 import Contact from "../components/Home/Contact";
 import PhotographyPortfolio from "../components/Home/PhotographyPortfolio";
 import FilmDirection from "../components/Home/FilmDirection";
+import Projects from "../components/Home/Projects";
 
 //
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Header />
       <main>
         <Hero />
+        <Projects />
         <FilmDirection />
         <PhotographyPortfolio />
         <Contact />
