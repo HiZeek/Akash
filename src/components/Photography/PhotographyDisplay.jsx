@@ -1,8 +1,7 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { photograph } from "../../utils/photography";
 import { Link, useLocation } from "react-router-dom";
 
-const PhotographyDisplay = () => {
+const PhotographyDisplay = ({ photograph }) => {
   const location = useLocation();
   const pathName = location.pathname;
   return (

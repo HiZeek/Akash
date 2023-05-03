@@ -6,28 +6,10 @@ import video1 from "../assets/videos/video1.mp4";
 import video2 from "../assets/videos/video2.mp4";
 import video3 from "../assets/videos/video3.mp4";
 
-export const projects = [
-  {
-    Title: "Fanolly Network",
-    img: Fanolly,
-  },
-  {
-    Title: "Sumofame",
-    img: Sumofame,
-  },
-  {
-    Title: "Washi",
-    img: Washi,
-  },
-  {
-    Title: "Cheesie",
-    img: Fanolly,
-  },
-];
-
 export const projectList = [
   {
     Title: "Snaplark",
+    img: Sumofame,
     video: video1,
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     fullDesc:
@@ -44,11 +26,13 @@ export const projectList = [
       },
       { feat: "Lightweight and easy user optimized" },
     ],
-    isHovered: false,
+    isHovered: true,
     url: "#",
+    mail: "support@snaplark.com",
   },
   {
     Title: "Washi",
+    img: Washi,
     video: video2,
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     fullDesc:
@@ -67,9 +51,11 @@ export const projectList = [
     ],
     isHovered: false,
     url: "#",
+    mail: "support@washi.com",
   },
   {
     Title: "Sumofame",
+    img: Sumofame,
     video: video3,
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     fullDesc:
@@ -88,9 +74,11 @@ export const projectList = [
     ],
     isHovered: false,
     url: "#",
+    mail: "support@sumofame.com",
   },
   {
     Title: "Fanolly network",
+    img: Fanolly,
     video: video1,
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     fullDesc:
@@ -109,9 +97,11 @@ export const projectList = [
     ],
     isHovered: false,
     url: "#",
+    mail: "support@fanollynetwork.com",
   },
   {
     Title: "Cheesie",
+    img: Fanolly,
     video: video2,
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     fullDesc:
@@ -130,5 +120,6 @@ export const projectList = [
     ],
     isHovered: false,
     url: "#",
+    mail: "support@cheesie.com",
   },
 ];

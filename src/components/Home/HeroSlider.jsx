@@ -12,19 +12,24 @@ const HeroSlider = () => {
   return (
     <Swiper
       slidesPerView={2}
-      spaceBetween={66}
+      spaceBetween={30}
       centeredSlides={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={{ clickable: true }}
+      // pagination={{
+      //   clickable: true,
+      // }}
+      navigation={true}
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       }}
       modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper pt-40"
+      // breakpoints={{
+      //   320: { slidesPerView: "auto", spaceBetween: 30 },
+      //   // 768: { slidesPerView: 2, spaceBetween: 10 },
+      //   // 1024: { slidesPerView: 2, spaceBetween: 50 },
+      // }}
+      className="mySwiper md:pt-40"
     >
       {heroBg.map((hero, i) => (
         <SwiperSlide key={i} className="group relative">
@@ -32,7 +37,7 @@ const HeroSlider = () => {
             src={hero.img}
             key={i}
             alt="Homepage Snaplark"
-            className={`"w-[826px] h-[642.84px]"`}
+            className={`w-[826px] h-full md:h-[642.84px]`}
           />
           <a
             href={hero.link}

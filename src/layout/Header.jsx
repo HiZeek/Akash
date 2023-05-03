@@ -26,28 +26,32 @@ const Header = () => {
       <Container className="px-5 py-5">
         <div className="flex items-center justify-between">
           <Link to="/">
-            <img src={Logo} alt="Logo" className="w-[203px] h-[89px]" />
+            <img
+              src={Logo}
+              alt="Logo"
+              className="w-[92px] h-10 md:w-[203px] md:h-[89px]"
+            />
           </Link>
           <Button
             onClick={handleDisplayMenu}
-            className="text-white border-2 py-5 px-[38px] border-white text-2xl"
+            className="text-white border-2 py-[15px] px-7 md:py-5 md:px-[38px] border-white text-sm md:text-2xl"
           >
             Menu
           </Button>
         </div>
         <div
-          className={`bg-buttonDark blurBg p-[50px] fixed z-50 top-0 right-0 h-screen w-[724px] transform transition-transform ${
+          className={`bg-buttonDark blurBg p-[50px] fixed z-50 top-0 right-0 h-screen w-full md:w-[724px] transform transition-transform ${
             displayMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <div className="flex justify-between items-center">
-            <Button className="text-white border font-normal py-5 px-[67px] borderGradient bg-black text-2xl">
+            <Button className="text-white border font-normal py-4 px-[22px] md:py-5 md:px-[67px] borderGradient text-lg md:text-2xl">
               View My Resume
             </Button>
             <img
               src={CloseMenu}
               alt="ArrowRight"
-              className="w-[50px] h-[50px] cursor-pointer"
+              className="w-[32px] h-[32px] md:w-[50px] md:h-[50px] cursor-pointer"
               onClick={handleHideMenu}
             />
           </div>
@@ -55,14 +59,14 @@ const Header = () => {
             {menuLink.map((item, i) => (
               <li
                 key={i}
-                className="cursor-pointer font-normal text-4xl hover:text-[44px]"
+                className="cursor-pointer font-normal text-[19px] md:text-4xl hover:text-[44px]"
               >
                 <Link to={item.url}>{item.link}</Link>
               </li>
             ))}
           </ul>
           <div className="mt-[60px]">
-            <p className="font-normal text-[44px]">Contact</p>
+            <p className="font-normal text-2xl md:text-[44px]">Contact</p>
             <div className="flex gap-5 mt-20">
               <a
                 href="https://www.linkedin.com/"
@@ -86,7 +90,7 @@ const Header = () => {
                   className="w-[32px] h-[32px]"
                 />
               </a>
-              <p className="text-[22px]">/iamakashsekar</p>
+              <p className="text-lg md:text-[22px]">/iamakashsekar</p>
             </div>
           </div>
         </div>

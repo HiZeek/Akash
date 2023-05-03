@@ -103,12 +103,30 @@
   }
 
   .borderGradient {
-    border-color: #ffffff;
-    border-image: linear-gradient(
+    background: linear-gradient(
       to bottom right,
       rgba(255, 255, 255, 0.256),
       rgba(255, 255, 255, 0)
     );
+    border: 0;
+    padding: 20px 67px;
+    position: relative;
+    border-width: 1px;
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+  .borderGradient::before {
+    background: rgba(21, 21, 24, 0.56);
+    content: "";
+    display: block;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 16px;
+    z-index: -1;
   }
 
   .playBtn {

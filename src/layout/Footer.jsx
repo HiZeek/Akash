@@ -24,16 +24,20 @@ const Footer = () => {
       <Container className="px-5">
         {pathName === "/" && (
           <div>
-            <p className="text-center font-normal text-[32px] text-primaryBlack mb-5">
+            <p className="text-center font-normal text-2xl md:text-[32px] text-primaryBlack mb-5">
               Featured in
             </p>
             <div className="flex items-center justify-center gap-10 mb-10">
               <img
                 src={TheIndianExpress}
                 alt="The Indian Express"
-                className="w-[300px] h-[60px]"
+                className="w-[132px] h-[27px] md:w-[300px] md:h-[60px]"
               />
-              <img src={DtNext} alt="Dt Next" className="w-[234px] h-[65px]" />
+              <img
+                src={DtNext}
+                alt="Dt Next"
+                className="w-[86px] h-[24px] md:w-[234px] md:h-[65px]"
+              />
             </div>
           </div>
         )}
@@ -43,14 +47,14 @@ const Footer = () => {
               <img
                 src={pathName === "/photography" ? Logo : DarkLogo}
                 alt="Logo"
-                className={`w-[203px] h-[89px] ${
-                  pathName === "/" ? "hidden" : ""
+                className={`w-[82px] h-[44.5px] md:w-[203px] md:h-[89px] ${
+                  pathName === "/" ? "md:hidden" : "block"
                 }`}
               />
             </Link>
 
             <p
-              className={`mt-5 ${
+              className={`mt-5 text-xs md:text-xl ${
                 pathName === "/photography" ? "text-white" : "text-primaryBlack"
               }`}
             >
@@ -67,7 +71,7 @@ const Footer = () => {
                 <img
                   src={LinkedInLogo}
                   alt="LinkedIn Logo"
-                  className="w-[40px] h-[40px]"
+                  className="w-[23px] h-[23px] md:w-[40px] md:h-[40px]"
                 />
               </a>
               <a
@@ -78,7 +82,7 @@ const Footer = () => {
                 <img
                   src={instagram}
                   alt="Instagram"
-                  className="w-[40px] h-[40px]"
+                  className="w-[23px] h-[23px] md:w-[40px] md:h-[40px]"
                 />
               </a>
             </div>
@@ -92,7 +96,7 @@ const Footer = () => {
                 <img
                   src={WhiteLinkedInLogo}
                   alt="LinkedIn Logo"
-                  className="w-[40px] h-[40px]"
+                  className="w-[23px] h-[23px] md:w-[40px] md:h-[40px]"
                 />
               </a>
               <a
@@ -103,7 +107,7 @@ const Footer = () => {
                 <img
                   src={whiteinstagram}
                   alt="Instagram"
-                  className="w-[40px] h-[40px]"
+                  className="w-[23px] h-[23px] md:w-[40px] md:h-[40px]"
                 />
               </a>
             </div>
