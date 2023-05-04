@@ -35,7 +35,7 @@ const Hero = () => {
               <img src={BorderBottom} alt="border" />
             </div>
             <div className="flex justify-center w-full gap-10 mt-10 font-medium text-2xl text-white">
-              <div className="text-center">
+              <div className="text-center relative">
                 <Button className="borderGradient flex items-center py-5 px-[35px] gap-[22px]">
                   <a href="#contact">Contact me</a>
                   <img
@@ -48,7 +48,7 @@ const Hero = () => {
                   />
                 </Button>
                 {displayDropdown && (
-                  <div className="w-[267px] borderGradient py-5 px-[35px] mt-[14px]">
+                  <div className="w-[267px] absolute borderGradient py-5 px-[35px] mt-[14px]">
                     <ul className="space-y-4">
                       {contactLinks.map((link, i) => (
                         <li

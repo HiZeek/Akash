@@ -88,7 +88,8 @@
 
   .photographyBottom {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    transform: matrix(1, 0, 0, -1, 0, 0);
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+    transform: rotate(180deg);
     height: 662px;
     width: 100%;
   }
@@ -184,4 +185,20 @@
   .photography {
     animation: photography 3s linear infinite;
   } */
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(-3500px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .slider-wrap {
+    animation: scroll 30s ease-in-out infinite;
+  }
 }

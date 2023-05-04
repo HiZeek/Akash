@@ -9,10 +9,10 @@ const PhotographyPortfolio = () => {
     <section className="bg-white md:bg-darkColor py-20 md:h-[1389px] overflow-hidden backdrop relative">
       <div className="photographyTop absolute top-0 z-10 hidden md:block" />
       <div className="hidden md:block">
-        <PhotographyDisplay photograph={photograph} />
+        <PhotographyDisplay photograph={photograph} animate="slider-wrap" />
       </div>
       <Container className="px-5">
-        <div className="lg:flex hidden justify-between items-center absolute bottom-20 z-20 text-white w-[1280px] m-auto">
+        <div className="lg:flex hidden justify-between items-center absolute bottom-20 z-30 text-white w-[1280px] m-auto">
           <div>
             <h3 className="text-6xl font-normal">Visit complete portfolio</h3>
             <p className="font-normal text-base mt-6">EDITORIAL | FASHION</p>

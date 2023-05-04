@@ -1,12 +1,12 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Link, useLocation } from "react-router-dom";
 
-const PhotographyDisplay = ({ photograph }) => {
+const PhotographyDisplay = ({ photograph, animate }) => {
   const location = useLocation();
   const pathName = location.pathname;
   return (
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-      <Masonry gutter="20px" className="photography">
+      <Masonry gutter="20px" className={`photography ${animate}`}>
         {photograph.map((image, i) => (
           <Link
             to={`/photography/${image.link}`}
