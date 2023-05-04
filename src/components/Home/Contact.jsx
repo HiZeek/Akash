@@ -7,7 +7,10 @@ import BCard from "../../assets/img/Bcard.png";
 
 const Contact = () => {
   return (
-    <section className="backdrop lg:h-[919px] bg-white text-primaryBlack">
+    <section
+      className="backdrop lg:h-[919px] bg-white text-primaryBlack"
+      id="contact"
+    >
       <Container className="py-20 px-5 flex flex-col lg:flex-row items-center justify-between">
         <div>
           <h2 className="font-bold text-[28px] sm:text-[66px]">

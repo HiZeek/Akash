@@ -5,7 +5,7 @@ const ContactForm = () => {
     <form className="mt-10 max-w-[628px]">
       <div className="flex flex-col md:flex-row gap-12 mb-10">
         <div className="flex flex-col md:block">
-          <label htmlFor="name" className="text-[22px]">
+          <label htmlFor="name" className="text-[17px] md:text-[22px]">
             Enter Your Name
           </label>
           <input
@@ -16,7 +16,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col md:block">
-          <label htmlFor="email" className="text-[22px]">
+          <label htmlFor="email" className="text-[17px] md:text-[22px]">
             Enter Your Email
           </label>
           <input
@@ -29,7 +29,7 @@ const ContactForm = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-12 mb-10">
         <div className="flex flex-col md:block">
-          <label htmlFor="country" className="text-[22px]">
+          <label htmlFor="country" className="text-[17px] md:text-[22px]">
             Country
           </label>
           <input
@@ -40,7 +40,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col md:block">
-          <label htmlFor="Contact" className="text-[22px]">
+          <label htmlFor="Contact" className="text-[17px] md:text-[22px]">
             Contact number
           </label>
           <input
@@ -52,7 +52,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="mb-10">
-        <label htmlFor="Contact" className="text-[22px]">
+        <label htmlFor="Contact" className="text-[17px] md:text-[22px]">
           Message:
         </label>
         <textarea

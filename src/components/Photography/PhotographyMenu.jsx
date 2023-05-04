@@ -20,7 +20,7 @@ const PhotographyMenu = () => {
             className="cursor-pointer font-normal group focus:font-bold hover:font-bold"
           >
             <NavLink
-              to={`/photography/${cat.photographId}`}
+              to={`/photography/${cat.photographId.toLowerCase()}`}
               className="flex items-center justify-between"
               activeClassName="active"
             >

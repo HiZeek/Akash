@@ -1,18 +1,18 @@
 import { Fragment } from "react";
 import Footer from "../layout/Footer";
 import PhotographyMenu from "../components/Photography/PhotographyMenu";
-import Category from "../components/Photography/Category";
+import CategoryPictures from "../components/Photography/CategoryPictures";
 
 const PhotographyCategory = () => {
   return (
     <Fragment>
-      <main className="bg-darkColor backdrop">
+      <main className="bg-white md:bg-darkColor backdrop">
         <div className="flex gap-5 max-w-[1440px] m-auto">
-          <div className="w-[337px]">
+          <div className="w-[337px] hidden md:block">
             <PhotographyMenu />
           </div>
-          <div className="photographyPort p-10 text-[22px]">
-            <Category />
+          <div className="w-full md:photographyPort p-10 text-[22px]">
+            <CategoryPictures />
           </div>
         </div>
       </main>

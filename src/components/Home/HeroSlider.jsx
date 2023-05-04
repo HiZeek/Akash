@@ -11,12 +11,9 @@ import HeroLink from "../../assets/img/HeroLink.png";
 const HeroSlider = () => {
   return (
     <Swiper
-      slidesPerView={2}
+      slidesPerView={"auto"}
       spaceBetween={30}
       centeredSlides={true}
-      // pagination={{
-      //   clickable: true,
-      // }}
       navigation={true}
       autoplay={{
         delay: 5000,
@@ -25,11 +22,11 @@ const HeroSlider = () => {
       }}
       modules={[Autoplay, Pagination, Navigation]}
       // breakpoints={{
-      //   320: { slidesPerView: "auto", spaceBetween: 30 },
-      //   // 768: { slidesPerView: 2, spaceBetween: 10 },
-      //   // 1024: { slidesPerView: 2, spaceBetween: 50 },
+      //   //   // 320: { slidesPerView: "auto", spaceBetween: 30 },
+      //   768: { slidesPerView: "auto", spaceBetween: 30 },
+      //   //   // 1024: { slidesPerView: 2, spaceBetween: 50 },
       // }}
-      className="mySwiper md:pt-40"
+      className="mySwiper md:pt-5"
     >
       {heroBg.map((hero, i) => (
         <SwiperSlide key={i} className="group relative">
@@ -37,7 +34,7 @@ const HeroSlider = () => {
             src={hero.img}
             key={i}
             alt="Homepage Snaplark"
-            className={`w-[826px] h-full md:h-[642.84px]`}
+            className={`w-[826px] h-full md:h-[542.84px]`}
           />
           <a
             href={hero.link}

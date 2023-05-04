@@ -1,9 +1,5 @@
 export const menuLink = [
   {
-    link: "Skills & Experience",
-    url: "/",
-  },
-  {
     link: "Entrepeneur",
     url: "/",
   },

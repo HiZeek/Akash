@@ -28,6 +28,10 @@
     font-family: "Druk_Wide_Bold", sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     font-family: "Helvetica_Neue", sans-serif;
@@ -164,7 +168,7 @@
     object-fit: cover;
   }
 
-  @keyframes photography {
+  /* @keyframes photography {
     from {
       bottom: 0%;
     }
@@ -175,5 +179,5 @@
 
   .photography {
     animation: photography 3s linear infinite;
-  }
+  } */
 }

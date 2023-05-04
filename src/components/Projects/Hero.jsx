@@ -8,14 +8,12 @@ import { useEffect, useState } from "react";
 import ArrowRight from "../../assets/img/arrow-right.png";
 import SnaplarkLogo from "../../assets/img/SnaplarkLogo.png";
 import Snaplark from "../../assets/img/Snaplark.png";
-
 import HomeIcon from "../../assets/icons/home.svg";
 import NextIcon from "../../assets/icons/next.svg";
 
 const Hero = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  // const [nextProject, setNextProject] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
