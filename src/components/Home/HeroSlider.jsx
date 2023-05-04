@@ -11,7 +11,7 @@ import HeroLink from "../../assets/img/HeroLink.png";
 const HeroSlider = () => {
   return (
     <Swiper
-      slidesPerView={"auto"}
+      slidesPerView={2}
       spaceBetween={30}
       centeredSlides={true}
       navigation={true}
