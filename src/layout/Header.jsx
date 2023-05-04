@@ -39,18 +39,7 @@ const Header = () => {
             />
           </Link>
           <div className="flex items-center gap-10">
-            <div className="hidden md:flex gap-5">
-              <a
-                href="https://www.linkedin.com/iamakashsekar"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={WhiteLinkedInLogo}
-                  alt="LinkedIn Logo"
-                  className="w-[32px] h-[32px]"
-                />
-              </a>
+            <div className="hidden md:flex items-center gap-[15px]">
               <a
                 href="https://www.instagram.com/iamakashsekar"
                 target="_blank"
@@ -62,6 +51,18 @@ const Header = () => {
                   className="w-[32px] h-[32px]"
                 />
               </a>
+              <a
+                href="https://www.linkedin.com/iamakashsekar"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={WhiteLinkedInLogo}
+                  alt="LinkedIn Logo"
+                  className="w-[32px] h-[32px]"
+                />
+              </a>
+
               <p className="text-lg md:text-[22px]">/iamakashsekar</p>
             </div>
             <Button

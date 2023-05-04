@@ -8,7 +8,7 @@ const Photography = () => {
   return (
     <Fragment>
       <main className="bg-darkColor backdrop">
-        <div className="flex gap-5 max-w-[1440px] m-auto">
+        <div className="flex gap-5 max-w-screen m-auto">
           <div className="w-[337px]">
             <PhotographyMenu />
           </div>

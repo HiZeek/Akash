@@ -12,7 +12,7 @@ const HeroSlider = () => {
   return (
     <Swiper
       slidesPerView={2}
-      spaceBetween={30}
+      spaceBetween={66}
       centeredSlides={true}
       navigation={true}
       autoplay={{
@@ -26,7 +26,7 @@ const HeroSlider = () => {
       //   768: { slidesPerView: "auto", spaceBetween: 30 },
       //   //   // 1024: { slidesPerView: 2, spaceBetween: 50 },
       // }}
-      className="mySwiper md:pt-5"
+      className="mySwiper md:pt-28"
     >
       {heroBg.map((hero, i) => (
         <SwiperSlide key={i} className="group relative">
@@ -38,11 +38,11 @@ const HeroSlider = () => {
           />
           <a
             href={hero.link}
-            className="absolute -top-5 -right-5 z-30 hidden group-hover:block"
+            className="absolute -top-28 -right-[70px] z-30 hidden group-hover:block"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={HeroLink} alt="Link" className="w-[80px] h-[80px]" />
+            <img src={HeroLink} alt="Link" className="w-[167px] h-[166.36px]" />
           </a>
         </SwiperSlide>
       ))}

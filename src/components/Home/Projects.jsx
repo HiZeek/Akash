@@ -44,6 +44,7 @@ const Projects = () => {
             muted
             className="h-full w-full object-cover absolute top-0 left-0"
           />
+          <div className="videoBlur h-full w-full object-cover absolute top-0 left-0" />
           <Container className="px-5 relative z-20">
             <div
               className="max-w-[644px] group cursor-pointer my-2"
